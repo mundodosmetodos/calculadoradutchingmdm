@@ -1,0 +1,50 @@
+index.html 
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calculadora Dutching Avançada</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Calculadora Dutching Avançada</h1>
+
+<div class="input-group">
+  Investimento total (R$): 
+  <input type="number" id="investimento" value="100" min="0">
+</div>
+
+<div class="buttons">
+  <button class="btn-add" id="btnAdd">➕ Adicionar Seleção</button>
+  <button class="btn-reset" id="btnReset">🔄 Reiniciar</button>
+</div>
+
+<div class="result-container">
+  <div class="result-box lucro">
+    Lucro: R$ <span id="lucro">0.00</span>
+  </div>
+  <div class="result-box retorno">
+    Retorno total: R$ <span id="retornoTotal">0.00</span>
+  </div>
+</div>
+
+<table id="tabela">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Odd</th>
+      <th>Investimento</th>
+      <th>Retorno</th>
+      <th>Ação</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- Linhas geradas dinamicamente -->
+  </tbody>
+</table>
+
+<script src="script.js"></script>
+</body>
+</html>
